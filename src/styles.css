@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    scroll-behavior: smooth;
+}
+.main-content {
+    margin-top: 50px;
+}
+
+.shadow {
+    box-shadow: 0 0 5px #999 !important;
+}
