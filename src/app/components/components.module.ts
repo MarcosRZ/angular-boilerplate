@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ExampleComponent } from './example/example.component';
+import { AppRouterModule } from '../routes';
+
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    AppRouterModule,
   ],
-  exports: [ ExampleComponent ],
+  exports: [ExampleComponent],
   declarations: [ExampleComponent]
 })
-export class ExampleModule { }
+export class ComponentsModule { }
