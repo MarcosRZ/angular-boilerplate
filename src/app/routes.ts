@@ -2,11 +2,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { ExampleComponent } from './components/example/example.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { AddingPagesComponent } from './pages/adding-pages/adding-pages.component';
 
 const appRoutes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'example', component: ExampleComponent },
     { path: 'contact', component: ContactComponent },
+    { path: 'adding-pages', component: AddingPagesComponent },
     // {
     //   path: 'heroes',
     //   component: HeroListComponent,

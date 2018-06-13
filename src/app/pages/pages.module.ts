@@ -4,6 +4,8 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { AppRouterModule } from '../routes';
 import { ComponentsModule } from '../components/components.module';
+import { AddingPagesComponent } from './adding-pages/adding-pages.component';
+
 
 @NgModule({
   imports: [
@@ -11,6 +13,6 @@ import { ComponentsModule } from '../components/components.module';
     AppRouterModule,
     ComponentsModule,
   ],
-  declarations: [HomeComponent, ContactComponent]
+  declarations: [HomeComponent, ContactComponent, AddingPagesComponent]
 })
 export class PagesModule { }

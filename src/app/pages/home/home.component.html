@@ -1,8 +1,40 @@
-<div class="jumbotron">
-  <h1 class="display-4">Home</h1>
-  <p class="lead">This grey box is a <b>feature component</b>.</p>
+
+  <h3>
+    <small class="text-mutated"></small>
+  </h3>
+  <h1>
+    Home
+    <small class="text-muted">This component is a
+      <b>Page</b>
+    </small>
+  </h1>
   <hr class="my-4">
-  <p> Most of your components will be like this.They're contained into his own module and exported by it, so they keep <em>portable</em> and <em>physically isolated</em> from the rest of the app.</p>
-  <a routerLink="/example" class="btn btn-primary btn-lg" role="button">Learn more</a>
-  <app-example></app-example>
-</div>
+  <p>After dive into Angular, I was working with <em>NextJS / React</em>. I really liked the logical structure proposed by Zeit team
+    in their 'NextJS' project. I think that it is clear and intuitive. Of course, there is no restriction or dependency on
+    this. Feel free to modify it to fit your needs. And if you think that it can be improved in any way, please, let me know.
+  </p>
+
+  <p>In the 'app' directory of this project you will see two main directories: </p>
+
+  <div class="item">
+    <h3>Pages</h3>
+    <p>Angular components that have the general main purpose of showing a mainpage.</p>
+    <p><span>Examples: </span><em>Home, About, Contact...</em></p>
+  </div>
+
+  <div class="item">
+    <h3>Components</h3>
+    <p>Angular components whose role is to implement a small part of the UI/UX. I.E.:</p>
+    <p><span>Examples: </span><em>SearchBox, PhotoCanvas, PostsList...</em></p>
+  </div>
+
+  <p>These two directories are the most important. But as you could find out, there are some others: </p>
+
+  <div class="item">
+    <h3>Core</h3>
+    <p>Angular components that are traversal to the whole front. Mainly, static components.</p>
+    <p><span>Examples:</span><em>Header, Navbar, Footer...</em></p>
+  </div>
+  <hr/>
+  <p class="text-right"><a routerLink="/adding-pages" class="btn btn-brand-color btn-md" role="button">Adding Pages ></a></p>
+
