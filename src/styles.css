@@ -1,10 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.footer, nav {
+    font-family: 'Raleway', sans-serif !important;
+}
+
 body {
     scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
+    /* 
     font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol" !important;
+    */
+    font-family: 'Raleway', sans-serif !important;
     font-weight: 300;
 }
 

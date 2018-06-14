@@ -5,6 +5,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AppRouterModule } from '../routes';
 import { ComponentsModule } from '../components/components.module';
 import { AddingPagesComponent } from './adding-pages/adding-pages.component';
+import { WeatherPageComponent } from './weather/weatherpage.component';
 
 
 @NgModule({
@@ -13,6 +14,6 @@ import { AddingPagesComponent } from './adding-pages/adding-pages.component';
     AppRouterModule,
     ComponentsModule,
   ],
-  declarations: [HomeComponent, ContactComponent, AddingPagesComponent]
+  declarations: [HomeComponent, ContactComponent, AddingPagesComponent, WeatherPageComponent]
 })
 export class PagesModule { }
