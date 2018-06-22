@@ -8,6 +8,7 @@ import { WeatherService } from '../../services/weather.service';
 })
 export class WeatherComponent implements OnInit {
 
+  public lastRequestTime;
   public forecast = {};
 
   constructor(private weatherService: WeatherService) {
@@ -15,12 +16,12 @@ export class WeatherComponent implements OnInit {
   }
 
   ngOnInit() {
-    setInterval(this.getForecast, 200);
+    setInterval(this.getForecast, 1000);
   }
 
   getForecast(): void {
     console.log('COMPONENT CALLS SERVICE!');
-    this.weatherService.getForecast().subscribe(f => this.forecast = ({...f, t: new Date().getTime()}));
+    this.weatherService.getForecast().subscribe(f => this.forecast = ({...f, date: new Date().getTime()}));
   }
 
 }

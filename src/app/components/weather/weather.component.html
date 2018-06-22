@@ -125,6 +125,18 @@
                     <td>{{forecast.WEATHER_DES}}</td>
                     <td></td>
                 </tr>
+                <tr>
+                    <th>LAST REQUEST DATE
+                    </th>
+                    <td>{{ forecast.date | date}}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>LAST REQUEST TIME
+                    </th>
+                    <td>{{ forecast.date | date:'longTime' }}</td>
+                    <td></td>
+                </tr>
             </tbody>
         </table>
     </div>
