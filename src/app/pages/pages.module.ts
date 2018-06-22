@@ -5,14 +5,16 @@ import { ContactComponent } from './contact/contact.component';
 import { AppRouterModule } from '../routes';
 import { ComponentsModule } from '../components/components.module';
 import { AddingPagesComponent } from './adding-pages/adding-pages.component';
-
+import { LoginComponent } from './login/login.component';
+import { CoreModule } from '../core/core.module';
 
 @NgModule({
   imports: [
+    CoreModule,
     CommonModule,
     AppRouterModule,
     ComponentsModule,
   ],
-  declarations: [HomeComponent, ContactComponent, AddingPagesComponent]
+  declarations: [HomeComponent, ContactComponent, AddingPagesComponent, LoginComponent]
 })
 export class PagesModule { }

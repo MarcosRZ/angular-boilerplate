@@ -1,12 +1,15 @@
 import { RouterModule, Routes } from '@angular/router';
 import { ExampleComponent } from './components/example/example.component';
 import { HomeComponent } from './pages/home/home.component';
+import { LoginComponent } from './pages/login/login.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AddingPagesComponent } from './pages/adding-pages/adding-pages.component';
+import {AuthGuard} from './guards/authGuard';
 
 const appRoutes: Routes = [
     { path: '', component: HomeComponent },
-    { path: 'example', component: ExampleComponent },
+    { path: 'login', component: LoginComponent },
+    { path: 'example', component: ExampleComponent, canActivate: [AuthGuard] },
     { path: 'contact', component: ContactComponent },
     { path: 'adding-pages', component: AddingPagesComponent },
     // {
